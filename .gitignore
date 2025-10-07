@@ -1,0 +1,164 @@
+# 📁 Ignorar carpeta Data completa (archivos de audio y datasets)
+
+Data/
+
+
+
+# 📊 Archivos de datos y modelos entrenados
+
+*.h5# 🐍 Python
+
+*.keras__pycache__/
+
+music_genre_model_savedmodel/*.py[cod]
+
+model_config.json*$py.class
+
+*.so
+
+# 🎵 Archivos de audio capturados.Python
+
+captured_audio/build/
+
+captured_spectrograms/develop-eggs/
+
+dist/
+
+# 📦 Archivos comprimidos y modelosdownloads/
+
+*.zipeggs/
+
+.eggs/
+
+# 🐍 Pythonlib/
+
+__pycache__/lib64/
+
+*.py[cod]parts/
+
+*$py.classsdist/
+
+*.sovar/
+
+.Pythonwheels/
+
+build/pip-wheel-metadata/
+
+develop-eggs/share/python-wheels/
+
+dist/*.egg-info/
+
+downloads/.installed.cfg
+
+eggs/*.egg
+
+.eggs/MANIFEST
+
+lib/
+
+lib64/# 🌐 Virtual Environment
+
+parts/.env
+
+sdist/.venv
+
+var/env/
+
+wheels/venv/
+
+pip-wheel-metadata/ENV/
+
+share/python-wheels/env.bak/
+
+*.egg-info/venv.bak/
+
+.installed.cfg
+
+*.egg# 📝 IDEs y Editores
+
+MANIFEST.vscode/
+
+.idea/
+
+# 🌐 Virtual Environment*.swp
+
+.env*.swo
+
+.venv*~
+
+env/
+
+venv/# 📊 Jupyter Notebook
+
+ENV/.ipynb_checkpoints/
+
+env.bak/
+
+venv.bak/# 🗂️ Sistema operativo
+
+.DS_Store
+
+# 📝 IDEs y Editores.DS_Store?
+
+.vscode/._*
+
+.idea/.Spotlight-V100
+
+*.swp.Trashes
+
+*.swoehthumbs.db
+
+*~Thumbs.db
+
+
+
+# 📊 Jupyter Notebook# 🔧 Logs y archivos temporales
+
+.ipynb_checkpoints/*.log
+
+*.tmp
+
+# 🗂️ Sistema operativo*.temp
+
+.DS_Store
+
+.DS_Store?# 📋 Archivos de configuración local
+
+._*config.ini
+
+.Spotlight-V100settings.json
+
+.Trashes
+
+ehthumbs.db# 📁 Ignorar carpeta Data completa (archivos de audio y datasets)
+
+Thumbs.dbData/
+
+
+
+# 🔧 Logs y archivos temporales# � Archivos de datos y modelos entrenados
+
+*.log*.h5
+
+*.tmp*.keras
+
+*.tempmusic_genre_model_savedmodel/
+
+model_config.json
+
+# 📋 Archivos de configuración local
+
+config.ini# 🎵 Archivos de audio capturados
+
+settings.jsoncaptured_audio/
+
+captured_spectrograms/
+
+# 🎯 Archivos específicos del proyecto
+
+spectrograms_generated/# 📦 Archivos comprimidos y modelos
+
+test_audio/*.zip
+
+output/
+results/
