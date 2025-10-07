@@ -156,7 +156,11 @@ captured_spectrograms/
 
 # 🎯 Archivos específicos del proyecto
 
-spectrograms_generated/# 📦 Archivos comprimidos y modelos
+spectrograms_generated/
+
+# 📦 Archivos comprimidos y modelos
+
+*.zip
 
 test_audio/*.zip
 
