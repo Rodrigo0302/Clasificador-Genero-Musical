@@ -144,11 +144,12 @@ Thumbs.dbData/
 
 *.tempmusic_genre_model_savedmodel/
 
-model_config.json
+
 
 # 📋 Archivos de configuración local
 
-config.ini# 🎵 Archivos de audio capturados
+config.ini
+# 🎵 Archivos de audio capturados
 
 settings.jsoncaptured_audio/
 

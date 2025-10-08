@@ -1,0 +1,21 @@
+{
+  "genre_map": {
+    "blues": 0,
+    "classical": 1,
+    "jazz": 2,
+    "metal": 3,
+    "reggae": 4,
+    "rock": 5
+  },
+  "inverse_genre_map": {
+    "0": "blues",
+    "1": "classical",
+    "2": "jazz",
+    "3": "metal",
+    "4": "reggae",
+    "5": "rock"
+  },
+  "input_shape": [288, 432, 3],
+  "genres_list": ["blues", "classical", "jazz", "metal", "reggae", "rock"],
+  "img_size": [288, 432]
+}
