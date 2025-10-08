@@ -173,3 +173,5 @@ codigo/music_genre_model_savedmodel/fingerprint.pb
 codigo/music_genre_model_savedmodel/saved_model.pb
 codigo/music_genre_model_savedmodel/variables/variables.data-00000-of-00001
 codigo/music_genre_model_savedmodel/variables/variables.index
+
+exported_models/
