@@ -144,11 +144,12 @@ Thumbs.dbData/
 
 *.tempmusic_genre_model_savedmodel/
 
-model_config.json
+
 
 # 📋 Archivos de configuración local
 
-config.ini# 🎵 Archivos de audio capturados
+config.ini
+# 🎵 Archivos de audio capturados
 
 settings.jsoncaptured_audio/
 
@@ -156,9 +157,21 @@ captured_spectrograms/
 
 # 🎯 Archivos específicos del proyecto
 
-spectrograms_generated/# 📦 Archivos comprimidos y modelos
+spectrograms_generated/
+
+# 📦 Archivos comprimidos y modelos
+
+*.zip
 
 test_audio/*.zip
 
 output/
 results/
+codigo/music_genre_classifier.h5
+codigo/music_genre_classifier.keras
+codigo/music_genre_model_savedmodel/fingerprint.pb
+codigo/music_genre_model_savedmodel/saved_model.pb
+codigo/music_genre_model_savedmodel/variables/variables.data-00000-of-00001
+codigo/music_genre_model_savedmodel/variables/variables.index
+
+exported_models/
