@@ -15,7 +15,7 @@
     "4": "reggae",
     "5": "rock"
   },
-  "input_shape": [288, 432, 3],
+  "input_shape": [192, 256, 3],
   "genres_list": ["blues", "classical", "jazz", "metal", "reggae", "rock"],
-  "img_size": [288, 432]
+  "img_size": [192, 256]
 }
