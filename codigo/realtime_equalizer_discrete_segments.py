@@ -39,9 +39,9 @@ from datetime import datetime
 import scipy.signal as signal
 
 class DiscreteAudioSegmentProcessor:
-    """Procesador de audio en segmentos discretos de 30 segundos"""
+    """Procesador de audio en segmentos discretos de 3 segundos"""
 
-    def __init__(self, sample_rate=22050, segment_duration=30.0, hop_length=512, n_mels=128, device_id=None):
+    def __init__(self, sample_rate=22050, segment_duration=3.0, hop_length=512, n_mels=128, device_id=None):
         self.sample_rate = sample_rate
         self.segment_duration = segment_duration
         self.segment_size = int(sample_rate * segment_duration)
@@ -167,7 +167,7 @@ class DiscreteAudioSegmentProcessor:
                 print(f"📦 Segmento {self.segment_counter + 1} completo ({self.segment_duration}s)")
 
     def generate_mel_spectrogram_magma(self, audio_data):
-        """Genera espectrograma mel con colormap magma y dimensiones 432x288"""
+        """Genera espectrograma mel con colormap magma y dimensiones 256x192"""
         try:
             # Verificar que tenemos suficientes datos
             if len(audio_data) < self.segment_size:
@@ -183,8 +183,8 @@ class DiscreteAudioSegmentProcessor:
             )
             mel_spec_db = librosa.power_to_db(mel_spec, ref=np.max)
 
-            # Crear figura con dimensiones específicas para 432x288
-            fig, ax = plt.subplots(figsize=(4.32, 2.88), dpi=100)
+            # Crear figura con dimensiones específicas para 256x192
+            fig, ax = plt.subplots(figsize=(2.56, 1.92), dpi=100)
             ax.axis('off')
             
             # Usar colormap magma
@@ -202,7 +202,7 @@ class DiscreteAudioSegmentProcessor:
             buf = io.BytesIO()
             plt.savefig(buf, format='png', bbox_inches='tight', pad_inches=0, dpi=100)
             buf.seek(0)
-            img = Image.open(buf).resize((432, 288))  # Dimensiones exactas 432x288
+            img = Image.open(buf).resize((256, 192))  # Dimensiones exactas 256x192
             plt.close(fig)
             buf.close()
             
